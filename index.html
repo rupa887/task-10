@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+    </style>
+</head>
+<body>
+    
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return. </p>
+        
+        <div class="container">
+            <label for="bill-amount">Bill Amount:</label>
+            <!-- input id and the for of label should be same for user to understand which label is for which input -->
+            <input placeholder="Rs 0000" id="bill-amount" type="text">
+            <p id="error-message"></p>
+            <label for="cash-given">Cash Given:</label>
+            <input placeholder="Rs 0000" id="cash-given" type="text">
+            <br>
+            <button id="check">Check</button>
+            
+            <table class="change">
+                <caption>Return Change</caption>
+                <tr>
+                    <th colspan="2">No of Notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+    
+    </div>
+    <footer class="footer">
+        <h3 class="footer-heading">Let's connect</h3>
+        <ul class="non-bullet">
+            <li class="list-item-inline"><a href="https://github.com/rupa887"><span class="fab fa-github-square"></span>Github</a></li>
+            
+        </ul>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
